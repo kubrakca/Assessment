@@ -199,9 +199,9 @@ public class GameEditorWindow : EditorWindow
             }
 
             GUILayout.Space(10);
-            if (GUILayout.Button("Toggle Active/Inactive"))
+            if (GUILayout.Button("Active/Inactive"))
             {
-                Undo.RecordObjects(selectedObjects.ToArray(), "Toggle Active/Inactive");
+                Undo.RecordObjects(selectedObjects.ToArray(), "Active/Inactive");
                 foreach (GameObject obj in selectedObjects)
                 {
                     obj.SetActive(!obj.activeSelf);
